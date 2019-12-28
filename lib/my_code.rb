@@ -8,17 +8,18 @@ end
 
 def reduce(array, starting_point = nil)
   if starting_point
-    num = starting_point
+    n = starting_point
     i = 0
   else 
-    num = array[0]
+    n = array[0]
     i = 1
   end
   while i < array.length
-    num = yield(num, array[i])
+    n = yield(n, array[i])
   i += 1 
   end
-  num
+  n
 end
 
+=begin
 
