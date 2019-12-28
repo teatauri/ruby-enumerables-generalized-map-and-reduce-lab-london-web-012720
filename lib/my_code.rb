@@ -18,7 +18,7 @@ def reduce(array, starting_point = nil)
     n = yield(n, array[i])
   i += 1 
   end
-  puts n
+  n
 end
 
 =begin
