@@ -22,4 +22,14 @@ def reduce(array, starting_point = nil)
 end
 
 =begin
-
+def reduce(array, starting_point = nil)
+  result = 0
+  array.each do |i|
+    result = yield(result, i)
+  end
+  if starting_point
+    result += starting_point
+  end
+  result
+end
+=end   # problems with passing the truthy/falsy q's
